@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>ASCII Cam</title>
+	<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+	<div class="header">
+		<div class="inner">
+			<img src="img/asciicam.png"/>
+			<div class="menu">created by <a href="//github.com/escobar5" target="_blank">escobar5</a></div>
+		</div>
+	</div>
+	<div class="body">
+		<div class="buttons">
+			<a href="#" class="button green" id="startbtn" >Start cam</a>&nbsp;
+	    	<a href="#" class="button red" id="stopbtn" style="display:none;">Stop cam</a>
+		</div>
+
+		<div id="asciiContainer">
+			<!-- The ascii art comes in the pre tag below -->
+			<pre id="asciiText"></pre>
+		</div>
+		<p>This html5 exercise uses the new getUserMedia element to capture video with the camera and then converts it to ascii art. The ascii conversion part was taken from this <a href="http://thecodeplayer.com/walkthrough/cool-ascii-animation-using-an-image-sprite-canvas-and-javascript" target="_blank">nice tutorial</a> from <a href="http://thecodeplayer.com" target="_blank">thecodeplayer</a>. It should work in Chrome 21+ and Opera 12+.</p>
+		<p>The source of this application can be found at <a href="//github.com/escobar5/asciicam" target="_blank">Github</a></p>
+		<p style="text-align:right;"><a href="https://twitter.com/escobar5" class="twitter-follow-button" data-show-count="false" style="position:absolute; right:0px;"></a></p>	
+	</div>
+	
+
+    <div style="display:none;">
+		<video id="cam" autoplay></video>
+	</div>
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	<script src="js/asciicam.js"></script>
+	<script type="text/javascript">
+	    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+	    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+	  </script>
+	  <script type="text/javascript">
+	    try {
+	      var pageTracker = _gat._getTracker("UA-34821707-1");
+	    pageTracker._trackPageview();
+	    } catch(err) {}
+	  </script>
+</body>
+</html>
