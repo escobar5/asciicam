@@ -28,11 +28,7 @@
 		if (navigator.getUserMedia) {
 			navigator.getUserMedia({video: true, toString: function() { return "video"; } },
 				function successCallback(stream) {
-					if(navigator.getUserMedia==navigator.mozGetUserMedia) {
-						cam.src = stream;
-					} else {
-						cam.src = window.URL.createObjectURL(stream) || stream;
-					}
+					cam.src = window.URL.createObjectURL(stream) || stream;
 					cam.play();
 					intervalId = setInterval(app.loop, loopSpeed);
 					btnStart.style.display = "none";
