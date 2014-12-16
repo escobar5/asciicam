@@ -10,6 +10,7 @@ This is an example of how to use the getUserMedia API to capture video from the 
 
 * Chrome 21+
 * Opera 12+
+* Firefox 31+
 
 ## Notes
 
