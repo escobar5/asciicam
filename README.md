@@ -1,6 +1,6 @@
 # Asciicam
 
-Running sample: http://escobar5.github.com/asciicam/
+Running sample: https://escobar5.github.com/asciicam/
 
 This is an html5 Ascii camera, it shows the camera stream as ascii art.
 
